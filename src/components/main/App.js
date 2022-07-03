@@ -4,6 +4,9 @@ import WorkFrame from "./WorkFrame";
 function App() {
     return (
         <div className={styles.App}>
+            <div className={styles.header}>
+                <span className={styles.logo}>MedExpert</span>
+            </div>
             <WorkFrame
                 firstFrame={<div style={{backgroundColor: '#add7f6'}}>Hello world</div>}
                 secondFrame={<div style={{backgroundColor: '#87bfff'}}>Hello you</div>}
