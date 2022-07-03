@@ -1,17 +1,22 @@
 import styles from './App.module.css'
 import WorkFrame from "./WorkFrame";
+import Logo from "./Logo";
 
 function App() {
     return (
         <div className={styles.App}>
             <div className={styles.header}>
-                <span className={styles.logo}>MedExpert</span>
+                <Logo/>
+                <ul className={styles.menu}>
+                    <li>Пресеты</li>
+                    <li>О программе</li>
+                </ul>
             </div>
             <WorkFrame
-                firstFrame={<div style={{backgroundColor: '#add7f6'}}>Hello world</div>}
-                secondFrame={<div style={{backgroundColor: '#87bfff'}}>Hello you</div>}
-                thirdFrame={<div style={{backgroundColor: '#3f8efc'}}>Hello friends</div>}
-                fourthFrame={<div style={{backgroundColor: '#2667ff'}}>Hello everyone</div>}
+                firstFrame={<div>Hello world</div>}
+                secondFrame={<div>Hello you</div>}
+                thirdFrame={<div>Hello friends</div>}
+                fourthFrame={<div>Hello everyone</div>}
             />
         </div>
     );
