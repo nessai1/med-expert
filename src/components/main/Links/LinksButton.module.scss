@@ -1,0 +1,56 @@
+.link {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  .linkText {
+    color: #3d3d3d;
+  }
+
+  .linkArrow {
+    margin-left: 6px;
+    fill: #3d3d3d;
+  }
+
+  &:active {
+    .linkText {
+      color: rgb(34, 34, 34);
+    }
+
+    .linkArrow {
+      fill: rgb(34, 34, 34);
+    }
+  }
+
+
+  /**
+  * Для эксплорера
+  */
+  -ms-user-select: none;
+
+  /**
+   * Для мозилы
+   */
+  -moz-user-select: none;
+
+  /**
+   * Для конкверора
+   */
+  -khtml-user-select: none;
+
+  /**
+   * Для Сафари и Хрома
+   */
+  -webkit-user-select: none;
+}
+
+.linkButton {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 15px;
+
+}
+
+.linkArrow {
+  vertical-align: middle;
+}

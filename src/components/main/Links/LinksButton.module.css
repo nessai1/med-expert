@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.link {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  /**
+  * Для эксплорера
+  */
+  -ms-user-select: none;
+  /**
+   * Для мозилы
+   */
+  -moz-user-select: none;
+  /**
+   * Для конкверора
+   */
+  -khtml-user-select: none;
+  /**
+   * Для Сафари и Хрома
+   */
+  -webkit-user-select: none;
+}
+.link .linkText {
+  color: #3d3d3d;
+}
+.link .linkArrow {
+  margin-left: 6px;
+  fill: #3d3d3d;
+}
+.link:active .linkText {
+  color: #222222;
+}
+.link:active .linkArrow {
+  fill: #222222;
+}
+
+.linkButton {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.linkArrow {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=LinksButton.module.css.map */

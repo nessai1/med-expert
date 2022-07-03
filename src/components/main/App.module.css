@@ -1,0 +1,25 @@
+.App {
+  font-size: 20px;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  padding: 10px 10px;
+  font-weight: bold;
+  display: flex;
+  background-color: #F2F2F2;
+  display: flex;
+}
+
+.menu {
+  font-weight: 400;
+}
+.menu li {
+  display: inline-block;
+  color: #3d3d3d;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+/*# sourceMappingURL=App.module.css.map */
