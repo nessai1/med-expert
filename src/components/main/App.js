@@ -9,7 +9,16 @@ function App() {
             <div className={styles.header}>
                 <Logo/>
                 <ul className={styles.menu}>
-                    <li><LinksButton>Пресеты</LinksButton></li>
+                    <li>
+                        <LinksButton
+                            items={[
+                                {title: 'Some title', callback: () => {console.log('one link')}},
+                                {title: 'Second link', callback: () => {console.log('two link')}},
+                            ]}
+                        >
+                            Пресеты
+                        </LinksButton>
+                    </li>
                 </ul>
             </div>
             <WorkFrame

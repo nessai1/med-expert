@@ -1,0 +1,23 @@
+.list {
+  margin-top: 5px;
+  position: absolute;
+  min-width: 150px;
+  z-index: 999;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 16%) 0 4px 12px;
+  color: #222;
+  background-color: #fff;
+
+  li {
+    display: block;
+    margin: 0;
+    padding: 6px 8px;
+
+    &:hover {
+      color: rgb(34, 34, 34);
+      border-radius: 6px;
+      background-color: rgb(235, 235, 235);
+    }
+  }
+}
