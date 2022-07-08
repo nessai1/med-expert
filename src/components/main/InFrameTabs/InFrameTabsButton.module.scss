@@ -1,0 +1,27 @@
+.tabsBtn {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tabsBtn_Active {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  background: #e0e0e0;
+  cursor: default;
+}
+
+.tabsBtn:not(.tabsBtn_Active):hover,
+.tabsBtn:not(.tabsBtn_Active):focus {
+  background-color: #eee;
+}

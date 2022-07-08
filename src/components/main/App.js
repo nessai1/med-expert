@@ -2,6 +2,7 @@ import styles from './App.module.css'
 import WorkFrame from "./WorkFrame";
 import Logo from "./Logo";
 import LinksButton from "./Links/LinksButton";
+import {InFrameTabs} from "./InFrameTabs/InFrameTabs";
 
 function App() {
     return (
@@ -22,7 +23,7 @@ function App() {
                 </ul>
             </div>
             <WorkFrame
-                firstFrame={<div>Hello world</div>}
+                firstFrame={<InFrameTabs/>}
                 secondFrame={<div>Hello you</div>}
                 thirdFrame={<div>Hello friends</div>}
                 fourthFrame={<div>Hello everyone</div>}
