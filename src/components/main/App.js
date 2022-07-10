@@ -1,33 +1,35 @@
 import styles from './App.module.css'
 import WorkFrame from "./WorkFrame";
-import Logo from "./Logo";
-import LinksButton from "./Links/LinksButton";
+import Menu from "./Menu/Menu";
+import {useEffect, useState} from "react";
+import MyModal from "./MyModal/MyModal";
 import {VisualisationAnalysisFrame} from "../VisualisationAnalysisFrame/VisualisationAnalysisFrame";
 
 function App() {
+
+    const [modal, setModal] = useState(false);
+    const [content, setContent] = useState('');
+
+    useEffect(
+        () => {
+            setModal(true)
+        },
+        [content],
+    );
+
     return (
-        <div className={styles.App}>
-            <div className={styles.header}>
-                <Logo/>
-                <ul className={styles.menu}>
-                    <li>
-                        <LinksButton
-                            items={[
-                                {title: 'Some title', callback: () => {console.log('one link')}},
-                                {title: 'Second link', callback: () => {console.log('two link')}},
-                            ]}
-                        >
-                            Пресеты
-                        </LinksButton>
-                    </li>
-                </ul>
-            </div>
+
+            <div className={styles.App}>
+            <Menu callback={setContent}> </Menu>
             <WorkFrame
                 firstFrame={<VisualisationAnalysisFrame/>}
                 secondFrame={<div>Hello you</div>}
                 thirdFrame={<div>Hello friends</div>}
                 fourthFrame={<div>Hello everyone</div>}
             />
+                <MyModal visible={modal} setVisible = {setModal}>
+                    {content}
+                </MyModal>
         </div>
     );
 }
