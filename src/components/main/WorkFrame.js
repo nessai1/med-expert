@@ -8,7 +8,7 @@ function WorkFrame(props) {
         <div className={styles.workFrame}>
             <Splitter
                 position="vertical"
-                primaryPaneWidth="240px"
+                primaryPaneWidth="35%"
                 primaryPaneMaxWidth="100%"
                 primaryPaneMinWidth={0}
                 dispatchResize={true}
@@ -17,7 +17,7 @@ function WorkFrame(props) {
                 {/* LEFT WORK-AREA */}
                 <Splitter
                     position="horizontal"
-                    primaryPaneHeight={340}
+                    primaryPaneHeight="40%"
                     primaryPaneMaxHeight="100%"
                     primaryPaneMinHeight={0}
                 >
