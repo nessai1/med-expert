@@ -1,0 +1,15 @@
+.rowBlock{
+  display: flex;
+  padding: 5px;
+  margin-bottom: 5px;
+  //border: 1px solid #cccccc;
+  justify-content: space-between;
+}
+
+.rowBlockTitle{
+  flex: 0.8;
+}
+
+.rowBlockContent{
+  flex: 1;
+}

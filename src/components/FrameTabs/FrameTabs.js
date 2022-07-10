@@ -14,6 +14,7 @@ export function FrameTabs({tabs}){
 		buttonList.push(
 			<FrameTabsButton
 				id = {i}
+				key = {i}
 				title = {tab.button.title}
 				activeTab={activeTab}
 				setActiveTab={setActiveTab}
@@ -24,6 +25,7 @@ export function FrameTabs({tabs}){
 		contentList.push(
 			<FrameTabsContent
 				id ={i}
+				key = {i}
 				activeTab = {activeTab}
 				content = {tab.content}
 			/>
