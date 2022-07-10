@@ -3,8 +3,15 @@ import './Slider.css';
 import {SliderButton} from "./SliderButton";
 import {useStatem, useEffect, useState} from "react";
 
-export function Slider({id}){
-	const [currentValue, setCurrentValue] = useState(0);
+export function Slider({id, changeCallback}){
+	const [currentValue, setCurrentValue] = useState(100);
+
+	if (!changeCallback)
+	{
+		changeCallback = (state) => {
+			console.log(`slider ${id}: changed data to ${state}`);
+		}
+	}
 
 	return (
 		<div className="SliderWrap">
@@ -12,20 +19,29 @@ export function Slider({id}){
 				id = {id}
 				title={'-'}
 				currentValue={currentValue}
-				onClick={() => setCurrentValue(currentValue - 1)}
+				onClick={() => {
+					changeCallback(currentValue - 1);
+					setCurrentValue(currentValue - 1);
+				}}
 			/>
 			<ReactSlider
 				className="Slider"
 				trackClassName="SliderTrack"
 				thumbClassName="SliderThumb"
 				value={currentValue}
-				onChange={(value) => setCurrentValue(value)}
+				onChange={(value) => {
+					changeCallback(value);
+					setCurrentValue(value);
+				}}
 			/>
 			<SliderButton
 				id = {id}
 				title={'+'}
 				currentValue={currentValue}
-				onClick={() => setCurrentValue(currentValue + 1)}
+				onClick={() => {
+					changeCallback(currentValue + 1);
+					setCurrentValue(currentValue + 1);
+				}}
 			/>
 		</div>
 

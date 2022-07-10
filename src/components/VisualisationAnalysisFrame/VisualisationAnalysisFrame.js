@@ -5,7 +5,7 @@ import {Slider} from "../Inputs/Slider/Slider";
 import {CheckBox} from "../Inputs/CheckBox/CheckBox";
 
 
-export function VisualisationAnalysisFrame()
+export function VisualisationAnalysisFrame({frameState, setFrameState})
 {
 	return(
 		<div className={styles.VisualisationAnalysisFrame}>
@@ -45,7 +45,10 @@ export function VisualisationAnalysisFrame()
 									},
 									{
 										title: 'Прозрачность',
-										content:  <Slider id ="sliderTransparency"/>,
+										content:  <Slider id ="sliderTransparency" changeCallback={(val) => {
+											frameState.opacity = val;
+											setFrameState(frameState);
+										}}/>,
 									},
 									{
 										title: 'X границы',
