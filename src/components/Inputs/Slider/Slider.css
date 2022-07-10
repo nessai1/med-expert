@@ -1,3 +1,9 @@
+.SliderWrap {
+	display: flex;
+	width: 100%;
+	position: center;
+	align-items: center;
+}
 .Slider {
 	/* max width of your slider */
 	max-width: 450px;

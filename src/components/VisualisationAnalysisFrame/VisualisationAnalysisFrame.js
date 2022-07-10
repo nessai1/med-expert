@@ -1,8 +1,8 @@
 import {FrameTabs} from "../FrameTabs/FrameTabs";
 import {RowBlocks} from "../RowBlocks/RowBlocks";
 import styles from './VisualisationAnalysisFrame.module.css';
-import {Slider} from "../Inputs/Slider";
-import {CheckBox} from "../Inputs/CheckBox";
+import {Slider} from "../Inputs/Slider/Slider";
+import {CheckBox} from "../Inputs/CheckBox/CheckBox";
 
 
 export function VisualisationAnalysisFrame()
@@ -32,20 +32,20 @@ export function VisualisationAnalysisFrame()
 										title: 'Освещение',
 										content: [
 											<CheckBox/>,
-											<Slider/>,
+											<Slider id ="sliderLightning"/>,
 										],
 									},
 									{
 										title: 'Уровень',
-										content: <Slider/>,
+										content: <Slider id ="sliderLevel"/>,
 									},
 									{
 										title: 'Порог',
-										content:  <Slider/>,
+										content:  <Slider id ="sliderLimit"/>,
 									},
 									{
 										title: 'Прозрачность',
-										content:  <Slider/>,
+										content:  <Slider id ="sliderTransparency"/>,
 									},
 									{
 										title: 'X границы',
