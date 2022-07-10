@@ -17,44 +17,52 @@ export function VisualisationAnalysisFrame()
 								blocks={[
 									{
 										title: 'Стандартный',
-										content: 'Кукареку',
+										content: [
+											<select id="sel1" className={styles.ShortSelector}>
+												<option>Realistic</option>
+												<option>Cardio</option>
+											</select>,
+											<button className={styles.Button}>
+												Редактировать
+											</button>
+										],
 									},
 									{
 										title: 'Освещение',
-										content: <ReactSlider
-											className="horizontal-slider"
-											thumbClassName="example-thumb"
-											trackClassName="example-track"
-											//custom track
-										/>
+										content: <ReactSlider/>,
 									},
 									{
 										title: 'Уровень',
-										content: 'Кукареку',
+										content:  <ReactSlider/>,
 									},
 									{
 										title: 'Порог',
-										content: 'Кукареку2',
+										content:  <ReactSlider/>,
 									},
 									{
 										title: 'Прозрачность',
-										content: 'Кукареку2',
+										content:  <ReactSlider/>,
 									},
 									{
 										title: 'X границы',
-										content: 'Кукареку',
+										content: <input className={styles.LongInput}/>,
 									},
 									{
 										title: 'Y границы',
-										content: 'Кукареку2',
+										content: <input className={styles.LongInput}/>,
 									},
 									{
 										title: 'Z границы',
-										content: <input/>,
+										content: <input className={styles.LongInput}/>,
 									},
 									{
 										title: 'Тип выреза',
-										content: 'Кукареку2',
+										content:
+											<select id="sel2" className={styles.LongSelector}>
+												<option>Без выреза</option>
+												<option>Углом</option>
+												<option>Передней плоскотью</option>
+											</select>,
 									},
 
 								]}
