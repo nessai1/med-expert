@@ -10,12 +10,13 @@ function App() {
     const [modal, setModal] = useState(false);
     const [content, setContent] = useState('');
 
-    useEffect(
-        () => {
-            setModal(true)
-        },
-        [content],
-    );
+        useEffect(
+            () => {
+                if(content!=='')
+                setModal(true)
+            },
+            [content],
+        );
 
     return (
 

@@ -12,8 +12,8 @@ const Menu = (props) => {
                 <ul className={styles.menu}><li>
                     <LinksButton
                         items={[
-                            {title: 'First link', callback: () => {props.callback(<File/>)}},
-                            {title: 'Second link', callback: () => {props.callback(<File2/>)}},
+                            {title: 'Окно #1', callback: () => {props.callback(<File/>)}},
+                            {title: 'Окно #2', callback: () => {props.callback(<File2/>)}},
                         ]}
                     >
                         Файл
