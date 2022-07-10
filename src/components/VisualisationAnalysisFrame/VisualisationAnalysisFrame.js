@@ -1,7 +1,8 @@
 import {FrameTabs} from "../FrameTabs/FrameTabs";
 import {RowBlocks} from "../RowBlocks/RowBlocks";
-import styles from './VisualisationAnalysisFrame.module.css'
-import ReactSlider from "react-slider";
+import styles from './VisualisationAnalysisFrame.module.css';
+import {Slider} from "../Inputs/Slider";
+import {CheckBox} from "../Inputs/CheckBox";
 
 
 export function VisualisationAnalysisFrame()
@@ -29,19 +30,22 @@ export function VisualisationAnalysisFrame()
 									},
 									{
 										title: 'Освещение',
-										content: <ReactSlider/>,
+										content: [
+											<CheckBox/>,
+											<Slider/>,
+										],
 									},
 									{
 										title: 'Уровень',
-										content:  <ReactSlider/>,
+										content: <Slider/>,
 									},
 									{
 										title: 'Порог',
-										content:  <ReactSlider/>,
+										content:  <Slider/>,
 									},
 									{
 										title: 'Прозрачность',
-										content:  <ReactSlider/>,
+										content:  <Slider/>,
 									},
 									{
 										title: 'X границы',

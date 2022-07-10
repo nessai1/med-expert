@@ -1,0 +1,35 @@
+.Slider {
+	/* max width of your slider */
+	max-width: 450px;
+	/* Optional: Only If you want to center your slider in the page */
+	margin: auto;
+	width: 100%;
+	bottom: 10px;
+}
+
+.SliderTrack {
+	/* Top value to align your track to the center of your thumb */
+	/* thickness of the track */
+	height: 7px;
+	/* default color of your track */
+	background: rgba(57, 169, 238, 0.35);
+	top: 7px;
+}
+
+.SliderTrack.SliderTrack-0 {
+	/* color of the track before the thumb */
+	background: rgb(57, 76, 238);
+}
+
+.SliderThumb{
+	overflow: hidden;
+	background: rgb(57, 76, 238);
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	/*color for the thumb */
+	/* shape of the thumb: circle */
+	border-radius: 100%;
+	/* remove default outline when selected */
+	outline: none;
+}
