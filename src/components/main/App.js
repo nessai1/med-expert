@@ -2,7 +2,7 @@ import styles from './App.module.css'
 import WorkFrame from "./WorkFrame";
 import Logo from "./Logo";
 import LinksButton from "./Links/LinksButton";
-import {InFrameTabs} from "./InFrameTabs/InFrameTabs";
+import {VisualisationAnalysisFrame} from "../VisualisationAnalysisFrame/VisualisationAnalysisFrame";
 
 function App() {
     return (
@@ -23,7 +23,7 @@ function App() {
                 </ul>
             </div>
             <WorkFrame
-                firstFrame={<InFrameTabs/>}
+                firstFrame={<VisualisationAnalysisFrame/>}
                 secondFrame={<div>Hello you</div>}
                 thirdFrame={<div>Hello friends</div>}
                 fourthFrame={<div>Hello everyone</div>}

@@ -1,7 +1,7 @@
-import styles from "./InFrameTabsButton.module.css";
+import styles from "./FrameTabsButton.module.css";
 
 
-export function InFrameTabsButton({ id, title, activeTab, setActiveTab }){
+export function FrameTabsButton({ id, title, activeTab, setActiveTab }){
 
 	const handleClick = () => {
 		setActiveTab(id);
