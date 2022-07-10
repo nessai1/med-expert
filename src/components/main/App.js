@@ -29,7 +29,7 @@ function App() {
     return (
 
             <div className={styles.App}>
-            <Menu callback={setContent}> </Menu>
+            <Menu callback={setContent} modalIsSat={setModal}> </Menu>
             <WorkFrame
                 firstFrame={<VisualisationAnalysisFrame frameState={frameState} setFrameState={(frameData) => {
                     setFrameState({opacity: frameData.opacity});
